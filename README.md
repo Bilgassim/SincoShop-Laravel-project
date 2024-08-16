@@ -35,7 +35,7 @@ Pour cloner et installer ce projet localement, suivez les étapes ci-dessous :
 
 1. **Cloner le Dépôt** :
    ```bash
-   git clone https://github.com/ton-utilisateur/sinco-shop.git
+   git clone https://github.com/Bilgassim/SincoShop-Laravel-project.git
    cd sinco-shop
 2. **Installer les Dépendances :** :
    ```bash
