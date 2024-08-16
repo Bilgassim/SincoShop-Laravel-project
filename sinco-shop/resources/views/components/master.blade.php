@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sinco Shop - Votre boutique en ligne pour les meilleurs produits. Découvrez notre large gamme de produits de qualité.">
     <title>Sinco Shop | {{ $titre }}</title>
     <link rel="icon" href="{{ asset('images/logo.ico') }}" type="image/x-icon">
     @vite('resources/css/app.css')
@@ -25,7 +26,7 @@
         <nav class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
             <a href="{{ route('home') }}" class="flex items-center space-x-2">
-                <img src="{{ asset('images/logo.png') }}" alt="Sinco Shop Logo" class="header-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="Sinco Shop Logo" class="header-logo" loading="lazy">
                 <span class="text-2xl font-bold">Sinco Shop</span>
             </a>
 
@@ -40,7 +41,7 @@
 
             <!-- Menu mobile -->
             <div class="md:hidden">
-                <button id="menu-button" class="focus:outline-none">
+                <button id="menu-button" class="focus:outline-none" aria-label="Ouvrir le menu">
                     <svg class="w-6 h-6 text-white hover:text-gray-400 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
@@ -50,7 +51,7 @@
 
         <!-- Menu mobile -->
         <div id="mobile-menu" class="fixed inset-0 bg-gray-800 bg-opacity-90 text-white p-8 transform translate-x-full transition-transform duration-300 ease-in-out z-50">
-            <button id="close-menu" class="absolute top-4 right-4 focus:outline-none">
+            <button id="close-menu" class="absolute top-4 right-4 focus:outline-none" aria-label="Fermer le menu">
                 <svg class="w-6 h-6 text-white hover:text-gray-400 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
