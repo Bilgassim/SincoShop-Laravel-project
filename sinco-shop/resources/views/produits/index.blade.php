@@ -7,29 +7,29 @@
         Retour
     </a>
     <div class="bg-white p-8 rounded-lg shadow-lg">
-        <h2 class="text-2xl font-bold mb-6">Liste des Produits</h2>
-        <a href="{{ route('produits.create') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 mb-4 inline-block">Ajouter un Produit</a>
-        <table class="min-w-full bg-white">
-            <thead>
+        <h2 class="text-3xl font-extrabold mb-6 text-gray-800">Liste des Produits</h2>
+        <a href="{{ route('produits.create') }}" class="bg-gradient-to-r from-blue-500 to-teal-500 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-blue-700 mb-6 inline-flex items-center transition-transform transform hover:scale-105">Ajouter un Produit</a>
+        <table class="min-w-full bg-white shadow-lg rounded-lg overflow-hidden">
+            <thead class="bg-gradient-to-r from-blue-500 to-teal-500 text-white">
                 <tr>
-                    <th class="py-2 px-4 border-b">Nom</th>
-                    <th class="py-2 px-4 border-b">Quantité</th>
-                    <th class="py-2 px-4 border-b">Prix</th>
-                    <th class="py-2 px-4 border-b">Actions</th>
+                    <th class="py-3 px-4 text-left font-semibold text-sm uppercase tracking-wider">Nom</th>
+                    <th class="py-3 px-4 text-left font-semibold text-sm uppercase tracking-wider">Quantité</th>
+                    <th class="py-3 px-4 text-left font-semibold text-sm uppercase tracking-wider">Prix</th>
+                    <th class="py-3 px-4 text-left font-semibold text-sm uppercase tracking-wider">Actions</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="bg-white divide-y divide-gray-200">
                 @foreach($products as $product)
                 <tr>
                     <td class="py-2 px-4 border-b">{{ $product->name }}</td>
                     <td class="py-2 px-4 border-b">{{ $product->quantity }}</td>
                     <td class="py-2 px-4 border-b">{{ $product->price }} MAD</td>
                     <td class="py-2 px-4 border-b">
-                        <a href="{{ route('produits.edit', $product->id) }}" class="text-blue-500 hover:underline">Modifier</a>
+                        <a href="{{ route('produits.edit', $product->id) }}" class="text-blue-500 hover:underline font-semibold transition-colors hover:text-blue-700">Modifier</a>
                         <form action="{{ route('produits.destroy', $product->id) }}" method="POST" class="inline-block">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="text-red-500 hover:underline">Supprimer</button>
+                            <button type="submit" class="text-red-500 hover:underline font-semibold transition-colors hover:text-red-700">Supprimer</button>
                         </form>
                     </td>
                 </tr>

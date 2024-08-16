@@ -7,21 +7,25 @@
         Retour
     </a>
     <div class="bg-white p-8 rounded-lg shadow-lg">
-        <h2 class="text-2xl font-bold mb-6">Liste des Commandes</h2>
-        <a href="{{ route('commandes.create') }}" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 mb-4 inline-block">Ajouter une Commande</a>
+        <h2 class="text-3xl font-extrabold mb-6 text-gray-800">Liste des Commandes</h2>
+        <a href="{{ route('commandes.create') }}" class="bg-gradient-to-r from-blue-500 to-teal-500 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-blue-700 mb-6 inline-flex items-center transition-transform transform hover:scale-105">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+            </svg>
+            Ajouter une Commande</a>
         <table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
-            <thead class="bg-gray-100">
+            <thead class="bg-gradient-to-r from-blue-500 to-teal-500 text-white">
                 <tr>
-                    <th class="py-3 px-4 border-b text-left text-gray-600">Numéro</th>
-                    <th class="py-3 px-4 border-b text-left text-gray-600">Client</th>
-                    <th class="py-3 px-4 border-b text-left text-gray-600">Prix (MAD)</th>
-                    <th class="py-3 px-4 border-b text-left text-gray-600">Statut</th>
-                    <th class="py-3 px-4 border-b text-left text-gray-600">Actions</th>
+                    <th class="py-3 px-4 text-left font-semibold text-sm uppercase tracking-wider">Numéro</th>
+                    <th class="py-3 px-4 text-left font-semibold text-sm uppercase tracking-wider">Client</th>
+                    <th class="py-3 px-4 text-left font-semibold text-sm uppercase tracking-wider">Prix (MAD)</th>
+                    <th class="py-3 px-4 text-left font-semibold text-sm uppercase tracking-wider">Statut</th>
+                    <th class="py-3 px-4 text-left font-semibold text-sm uppercase tracking-wider">Actions</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="bg-white divide-y divide-gray-200">
                 @foreach($orders as $order)
-                <tr class="hover:bg-gray-50">
+                <tr class="hover:bg-gray-100 transition-colors">
                     <td class="py-2 px-4 border-b">{{ $order->id }}</td>
                     <td class="py-2 px-4 border-b">{{ $order->customer_name }}</td>
                     <td class="py-2 px-4 border-b">{{ number_format($order->total_amount, 2, ',', ' ') }} MAD</td>
@@ -40,11 +44,11 @@
                         </span>
                     </td>
                     <td class="py-2 px-4 border-b">
-                        <a href="{{ route('commandes.edit', $order->id) }}" class="text-blue-500 hover:underline">Modifier</a>
+                        <a href="{{ route('commandes.edit', $order->id) }}" class="text-blue-500 hover:underline font-semibold transition-colors hover:text-blue-700">Modifier</a>
                         <form action="{{ route('commandes.destroy', $order->id) }}" method="POST" class="inline-block ml-2">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="text-red-500 hover:underline">Supprimer</button>
+                            <button type="submit" class="text-red-500 hover:underline font-semibold transition-colors hover:text-red-700">Supprimer</button>
                         </form>
                     </td>
                 </tr>
