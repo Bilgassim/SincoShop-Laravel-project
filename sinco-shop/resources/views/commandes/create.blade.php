@@ -1,3 +1,4 @@
+<!-- create.blade.php -->
 <x-master titre="Ajouter une Commande">
     <!-- Bouton de retour -->
     <a href="javascript:history.back()" class="inline-flex items-center px-4 py-2 bg-blue-500 text-white text-sm font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 mb-6 transition-transform transform hover:scale-105">
@@ -11,12 +12,22 @@
         <form action="{{ route('commandes.store') }}" method="POST">
             @csrf
             <div class="mb-4">
-                <label for="client_name" class="block text-gray-700">Nom du Client</label>
-                <input type="text" id="client_name" name="client_name" class="form-input mt-1 block w-full" required>
+                <label for="customer_name" class="block text-gray-700">Nom du Client</label>
+                <input type="text" id="customer_name" name="customer_name" class="form-input mt-1 block w-full" required>
             </div>
             <div class="mb-4">
-                <label for="order_date" class="block text-gray-700">Date de la Commande</label>
-                <input type="date" id="order_date" name="order_date" class="form-input mt-1 block w-full" required>
+                <label for="total_amount" class="block text-gray-700">Montant Total</label>
+                <input type="number" id="total_amount" name="total_amount" class="form-input mt-1 block w-full" step="0.01" required>
+            </div>
+            <div class="mb-4">
+                <label for="status" class="block text-gray-700">Statut</label>
+                <select id="status" name="status" class="form-select mt-1 block w-full" required>
+                    <option value="pending">En attente</option>
+                    <option value="processing">En traitement</option>
+                    <option value="shipped">Expédiée</option>
+                    <option value="delivered">Livrée</option>
+                    <option value="canceled">Annulée</option>
+                </select>
             </div>
             <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Ajouter</button>
         </form>

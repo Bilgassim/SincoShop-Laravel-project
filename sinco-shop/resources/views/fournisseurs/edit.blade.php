@@ -14,12 +14,12 @@
             @method('PUT')
             <div class="mb-4">
                 <label for="name" class="block text-gray-700">Nom</label>
-                <input type="text" id="name" name="name" class="form-input mt-1 block w-full" value="{{ $supplier->name }}" required>
+                <input type="text" id="name" name="name" class="form-input mt-1 block w-full" value="{{ old('supplier_name', $supplier->name) }}" required>
             </div>
             
             <div class="mb-4">
                 <label for="contact" class="block text-gray-700">Téléphone</label>
-                <input type="text" id="phone" name="contact" class="form-input mt-1 block w-full" value="{{ $supplier->phone }}" required>
+                <input type="text" id="contact" name="contact" class="form-input mt-1 block w-full" value="{{ old('contact', $supplier->contact) }}" required>
             </div>
             <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Mettre à jour</button>
         </form>

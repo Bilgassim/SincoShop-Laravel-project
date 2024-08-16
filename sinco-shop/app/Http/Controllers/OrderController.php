@@ -53,21 +53,22 @@ class OrderController extends Controller
 
     // Met à jour une commande existante
     public function update(Request $request, $id)
-    {
-        $validatedData = $request->validate([
-            'customer_name' => 'required|string|max:255',
-            'total_amount' => 'required|numeric',
-            'status' => 'required|string|max:255',
-        ]);
+{
+    $validatedData = $request->validate([
+        'customer_name' => 'required|string|max:255',
+        'total_amount' => 'required|numeric',
+        'status' => 'required|string|max:255',
+    ]);
 
-        try {
-            $order = Order::findOrFail($id);
-            $order->update($validatedData);
-            return redirect()->route('commandes.index')->with('success', 'Commande mise à jour avec succès.');
-        } catch (\Exception $e) {
-            return redirect()->back()->withErrors(['error' => 'Une erreur est survenue lors de la mise à jour de la commande.']);
-        }
+    try {
+        $order = Order::findOrFail($id);
+        $order->update($validatedData);
+        return redirect()->route('commandes.index')->with('success', 'Commande mise à jour avec succès.');
+    } catch (\Exception $e) {
+        return redirect()->back()->withErrors(['error' => 'Une erreur est survenue lors de la mise à jour de la commande.']);
     }
+}
+
 
     // Supprime une commande
     public function destroy($id)
