@@ -3,16 +3,35 @@
 Sinco Shop est une application de gestion de stocks et de commandes développée en Laravel avec une interface utilisateur moderne et intuitive. Ce projet est conçu pour aider les petites entreprises à gérer efficacement leurs stocks, commandes, fournisseurs, et à générer des rapports analytiques.
 
 ## Interfaces
-![Sinco Shop _ Accueil et 1 page supplémentaire - Personnel – Microsoft​ Edge 16_08_2024 02_06_31 (1)](https://github.com/user-attachments/assets/a1bda729-73f7-421c-8da1-283d8d99e5a6)
-![Sinco Shop _ Accueil et 1 page supplémentaire - Personnel – Microsoft​ Edge 16_08_2024 02_06_43](https://github.com/user-attachments/assets/936f87b4-5d13-4870-b03d-9dc7d55f73b8)
-![Sinco Shop _ Accueil et 1 page supplémentaire - Personnel – Microsoft​ Edge 16_08_2024 02_06_53](https://github.com/user-attachments/assets/11fbed7e-9b56-4277-86e4-cb16946b9384)
-![Sinco Shop _ Accueil et 1 page supplémentaire - Personnel – Microsoft​ Edge 16_08_2024 02_07_08](https://github.com/user-attachments/assets/fbcf5b80-bc9d-4841-b2b8-4ed030296545)
-![Sinco Shop _ Accueil et 1 page supplémentaire - Personnel – Microsoft​ Edge 16_08_2024 02_05_59](https://github.com/user-attachments/assets/31b24df8-58ae-4598-a746-0bccf5789d45)
+**Page d'accueil**
+![Sinco Shop _ Page de ](https://github.com/user-attachments/assets/31b24df8-58ae-4598-a746-0bccf5789d45)
+
+**Footer**
 ![Sinco Shop _ Accueil et 1 page supplémentaire - Personnel – Microsoft​ Edge 16_08_2024 02_06_15](https://github.com/user-attachments/assets/0f958ede-950e-4b97-b9dd-993d43705a9a)
 
-## Petite présentation de l'application
-https://github.com/user-attachments/assets/f03728ac-0d58-41f7-9244-88afdde7f547
+**Tableau de Bord**
+![Sinco Shop _ Page d'accueil](https://github.com/user-attachments/assets/a1bda729-73f7-421c-8da1-283d8d99e5a6)
 
+**Rapports**
+![Sinco Shop _ Rapports](https://github.com/user-attachments/assets/6f1774db-2003-4bcb-938f-b8d1ad2f8d90)
+
+**Gestion des Produits**
+![Sinco Shop _ Gestion des Produits et 1 page supplémentaire - Personnel – Microsoft​ Edge 16_08_2024 16_32_29](https://github.com/user-attachments/assets/ecad2ce4-69f4-43b0-aa39-c6425362b5c5)
+
+**Gestion des Commandes**
+![Sinco Shop _ Gestion des Commandes](https://github.com/user-attachments/assets/885f1924-5930-4a82-841f-99ae6ad79da6)
+
+**Gestion des Fournisseurs**
+![Sinco Shop _ Fournisseurs](https://github.com/user-attachments/assets/fbcf5b80-bc9d-4841-b2b8-4ed030296545)
+
+
+
+
+**Base de données**
+![base de donnée](https://github.com/user-attachments/assets/5bcac9e8-12ed-4af9-a258-a647451b582f)
+
+## Petite présentation de l'application
+[Regarder la vidéo : Presentation des fonctionnalités de l'Application](https://github.com/user-attachments/)
 
 ## Fonctionnalités
 
