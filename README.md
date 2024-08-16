@@ -31,7 +31,7 @@ Sinco Shop est une application de gestion de stocks et de commandes développée
 ![base de donnée](https://github.com/user-attachments/assets/5bcac9e8-12ed-4af9-a258-a647451b582f)
 
 ## Petite présentation de l'application
-[Regarder la vidéo : Presentation des fonctionnalités de l'Application](https://github.com/user-attachments/)
+[Regarder la vidéo : Presentation des fonctionnalités de l'Application](https://github.com/user-attachments/assets/f03728ac-0d58-41f7-9244-88afdde7f547)
 
 ## Fonctionnalités
 
