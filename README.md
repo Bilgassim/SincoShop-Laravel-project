@@ -10,6 +10,9 @@ Sinco Shop est une application de gestion de stocks et de commandes développée
 ![Sinco Shop _ Accueil et 1 page supplémentaire - Personnel – Microsoft​ Edge 16_08_2024 02_05_59](https://github.com/user-attachments/assets/31b24df8-58ae-4598-a746-0bccf5789d45)
 ![Sinco Shop _ Accueil et 1 page supplémentaire - Personnel – Microsoft​ Edge 16_08_2024 02_06_15](https://github.com/user-attachments/assets/0f958ede-950e-4b97-b9dd-993d43705a9a)
 
+## Petite présentation de l'application
+https://github.com/user-attachments/assets/f03728ac-0d58-41f7-9244-88afdde7f547
+
 
 ## Fonctionnalités
 
